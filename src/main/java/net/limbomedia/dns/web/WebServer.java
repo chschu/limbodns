@@ -40,6 +40,7 @@ public class WebServer {
     handlerServlets.setEnsureDefaultServlet(false);
     handlerServlets.addServletWithMapping(new ServletHolder(new ServletApi(config, zoneManager)), "/api/*");
     handlerServlets.addServletWithMapping(new ServletHolder(new UpdateServlet(config, zoneManager)), "/update/*");
+    handlerServlets.addServletWithMapping(new ServletHolder(new DynDNS2UpdateServlet(config, zoneManager)), "/nic/update");
     handlerServlets.addFilterWithMapping(new FilterHolder(new SecurityFilter(config.getPassword())), "/api/*", 0);
 
     // Own web resources (ctx handler is required so / will be forwarded not redirected to /index.html)
