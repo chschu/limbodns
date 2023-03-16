@@ -45,6 +45,7 @@ public class WebServer {
         handlerServlets.addServletWithMapping(
                 new ServletHolder(new ServletApiLego(config, zoneManager)), "/api/lego/*");
         handlerServlets.addServletWithMapping(new ServletHolder(new UpdateServlet(config, zoneManager)), "/update/*");
+        handlerServlets.addServletWithMapping(new ServletHolder(new DynDNS2UpdateServlet(config, zoneManager)), "/nic/update");
 
         ServletContextHandler handlerServletsWithContext = new ServletContextHandler("/", false, false);
         handlerServletsWithContext.setHandler(handlerServlets);
