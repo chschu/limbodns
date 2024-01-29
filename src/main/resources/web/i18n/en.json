@@ -45,6 +45,8 @@
 		"UNKNOWN_TITLE": "For IP auto-detection simply omit the IP:",
 		"UNKNOWN_HINT": "Note: Auto-update will only work if the caller uses the same IP protocol as the record that should be updated, especially if both nameserver and client support IPv4 AND IPv6.",
 		"WGET_TITLE": "Wget users simply force the right protocol:",
+		"DYNDNS2_TITLE": "A DynDNS2 endpoint is available at the following URL:",
+		"DYNDNS2_HINT": "Note: Use a dummy username and the password {0} for HTTP basic authentication. The DynDNS2 endpoint supports updating multiple hostnames and IP addresses (both comma-separated) with one request.",
 		"NO_TOKEN": "No token specified!",
 		"NO_TOKEN_HINT": "To use the DynDNS feature you need to set a token for your record. The token is your unique identifier and password, so choose a proper length."
 	},
