@@ -50,6 +50,9 @@ app.component('pageRecord', {
 				}
 				
 				
+			  ctrl.dyndns2 = {
+					url: window.location.protocol + "//" + window.location.host + "/nic/update"
+			  };
 		  });
 	  }
   }

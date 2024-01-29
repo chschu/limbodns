@@ -49,7 +49,9 @@
         "API_SIMPLE_DESC": "This as-simple-as-possible HTTP API has everything you need straight in the URL. No headers, no parameters, no json, no body ... just the URL, get or post. Simply make a HTTP call like this:",
         "API_SIMPLE_BODY1": "Update with autodetected aka the clients IP (Note that this might cause trouble on dual-stack IPv4+IPv6 setups):",
         "API_SIMPLE_BODY2": "Update with IP/value specified:",
-        "API_SIMPLE_BODY3": "Update with IPv4 and IPv6 specified in one request (A and AAAA records need to have the same update token):"
+        "API_SIMPLE_BODY3": "Update with IPv4 and IPv6 specified in one request (A and AAAA records need to have the same update token):",
+        "DYNDNS2_TITLE": "DynDNS2 endpoint",
+        "DYNDNS2_HINT": "Note: Use a dummy username and the password {{token}} for HTTP basic authentication. The DynDNS2 endpoint supports updating multiple hostnames and IP addresses (both comma-separated) with one request."
     },
     "error": {
         "net": {
